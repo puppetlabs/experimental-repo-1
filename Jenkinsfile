@@ -5,5 +5,5 @@ def meow = fileLoader.fromGit(
     'master', null, '')
 
 node {
-     meow.meow()
+     meow.experimental_repo_2_test()
 }
