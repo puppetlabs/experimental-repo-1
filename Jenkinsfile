@@ -5,6 +5,5 @@ def meow = fileLoader.fromGit(
     'master', null, '')
 
 node {
-     stage "meow"
      meow.meow()
 }
