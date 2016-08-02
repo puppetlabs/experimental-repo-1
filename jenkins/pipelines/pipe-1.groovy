@@ -1,8 +1,5 @@
-stage "Load meow from github file."
-def meow = fileLoader.fromGit(
-    'src/com/puppet/util/Meow',
-    'git@github.com:puppetlabs/jenkins-global-workflowlib.git',
-    'master', null, '')
+stage "Load meow from shared library"
+def meow = new com.puppet.util.Meow()
 
 node {
      meow.experimental_repo_2_test()
